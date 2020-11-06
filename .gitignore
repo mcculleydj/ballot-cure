@@ -1,0 +1,9 @@
+venv
+phones/*.csv
+*.csv
+data
+logs/*.log
+dev_logs/*.log
+csvs/**/*.csv
+__pycache__
+pdfs/*.png

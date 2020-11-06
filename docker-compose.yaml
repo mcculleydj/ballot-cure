@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+  postgres:
+    image: postgres:12
+    shm_size: '2gb'
+    ports:
+      - 5432:5432
+    volumes:
+      - ./data/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_PASSWORD=${DEV_POSTGRES_PASSWORD}
+      - POSTGRES_DB=${DEV_POSTGRES_DB}
+
+  redis:
+    image: redis:6
+    ports:
+      - 6379:6379

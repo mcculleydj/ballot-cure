@@ -1,0 +1,7 @@
+boto3
+psycopg2-binary
+python-dotenv
+redis
+fuzzywuzzy
+python-Levenshtein
+civis
